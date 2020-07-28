@@ -73,7 +73,6 @@ function FormInputTodo({ todoList, updateTodoList, todoDataTemp, setTodoDataTemp
                     
                 }else {
                     let newTodo = [...todoList]
-                    setPushNotification({msg: 'New Task Added', type: 'success'})
                     newTodo.push(data)
                     updateTodoList(newTodo)
                     setTitle('')
